@@ -345,7 +345,7 @@ Module(
       botImageLink = path.join(__dirname, "utils", "images", "default.png");
     }
 
-    const menu = `const menu = `
+    const menu = `
 ╭━━━〔 🤖 *${botName}* 〕━━━⬣
 ┃${star} 👑 Owner   : ${botOwner}
 ┃${star} 👤 User    : ${message.senderName.replace(/[\r\n]+/gm, "")}
@@ -557,4 +557,5 @@ Module(
     await parseAlive(message, aliveMessage);
   }
 );
+
 
