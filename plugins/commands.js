@@ -323,10 +323,10 @@ Module(
         i = i + 1;
         const newn = n.charAt(0).toUpperCase() + n.slice(1);
         final += `${
-          final.includes(newn) ? "" : "\n\n╭════〘 *_`" + newn + "`_* 〙════⊷❍"
+          final.includes(newn) ? "" : "\n\n╭════〘 *_`" + newn + "`_* 〙════⊷✵"
         }\n┃${star}│ _\`${i}.\` ${handlerPrefix}${x.trim()}_${
           cmd_obj[n]?.indexOf(x) === cmd_obj[n]?.length - 1
-            ? `\n┃${star}╰─────────────────❍\n╰══════════════════⊷❍`
+            ? `\n┃${star}╰─────────────────✵\n╰══════════════════⊷✵`
             : ""
         }`;
       }
@@ -345,24 +345,22 @@ Module(
       botImageLink = path.join(__dirname, "utils", "images", "default.png");
     }
 
-    const menu = `╭═══〘 \`${botName}\` 〙═══⊷❍
-┃${star}╭──────────────
-┃${star}│
-┃${star}│ _*\`Owner\`*_ : ${botOwner}
-┃${star}│ _*\`User\`*_ : ${message.senderName.replace(/[\r\n]+/gm, "")}
-┃${star}│ _*\`Mode\`*_ : ${MODE}
-┃${star}│ _*\`Server\`*_ : ${os.platform() === "linux" ? "Linux" : "Unknown OS"}
-┃${star}│ _*\`Available RAM\`*_ : ${used} of ${total}
-┃${star}│ _*\`Total Users\`*_ : ${totalUsers}
-┃${star}│ _*\`Version\`*_ : ${botVersion}
-┃${star}│
-┃${star}│
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
-┃${star}│   ${botName}
-┃${star}│
-┃${star}╰───────────────
-╰═════════════════⊷
+    const menu = `const menu = `
+╭━━━〔 🤖 *${botName}* 〕━━━⬣
+┃${star} 👑 Owner   : ${botOwner}
+┃${star} 👤 User    : ${message.senderName.replace(/[\r\n]+/gm, "")}
+┃${star} ⚙️ Mode     : ${MODE}
+┃${star} 🖥️ Server   : ${os.platform() === "linux" ? "Linux" : "Unknown OS"}
+┃${star} 💾 RAM      : ${used} / ${total}
+┃${star} 👥 Users    : ${totalUsers}
+┃${star} 🚀 Version  : ${botVersion}
+╰━━━━━━━━━━━━━━━━⬣
+
+╭━━━〔 ✦ ${botName} SYSTEM ✦ 〕━⬣
+┃${star} ⚡ System Performance
+┃${star} ▰▰▰▰▰▰▰▰▰▰ 100%
+┃${star} ▰▰▰▰▰▰▰▰▱▱ Stable
+╰━━━━━━━━━━━━━━━━⬣
 
 ${cmdmenu}`;
     try {
@@ -559,3 +557,4 @@ Module(
     await parseAlive(message, aliveMessage);
   }
 );
+
