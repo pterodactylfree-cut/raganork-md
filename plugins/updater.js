@@ -44,7 +44,7 @@ Module(
     }
 
     const command = match[1] ? match[1].toLowerCase() : "";
-    const processingMsg = await message.sendReply("_Checking for updates..._");
+    const processingMsg = await message.sendReply("_SOURAJIT-Checking for updates..._");
 
     try {
       // fetch remote version & commits
@@ -231,3 +231,4 @@ Module(
     }
   }
 );
+
