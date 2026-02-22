@@ -7,7 +7,7 @@ Module(
     excludeFromCommands: true,
   },
   async (m) => {
-    await m.sendReply("_Reloading bot..._");
+    await m.sendReply("_SOURAJIT-Reloading bot..._");
     process.exit(0);
   }
 );
@@ -19,7 +19,7 @@ Module(
     excludeFromCommands: true,
   },
   async (m) => {
-    await m.sendReply("_Reloading bot..._");
+    await m.sendReply("_SOURAJIT-Reloading bot..._");
     process.exit(0);
   }
 );
@@ -32,7 +32,8 @@ Module(
     use: "system",
   },
   async (m) => {
-    await m.sendReply("_Restarting bot..._");
+    await m.sendReply("_SOURAJIT-Restarting bot..._");
     process.exit(0);
   }
 );
+
