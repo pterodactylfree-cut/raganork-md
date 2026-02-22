@@ -294,7 +294,7 @@ Module(
     desc: "Displays the bot command menu.",
   },
   async (message, match) => {
-    const stars = ["✦", "✯", "✯", "✰", "◬"];
+    const stars = ["✦", "※", "✯", "✰", "✥"];
     const star = stars[Math.floor(Math.random() * stars.length)];
 
     let use_ = commands.map((e) => e.use);
@@ -557,5 +557,6 @@ Module(
     await parseAlive(message, aliveMessage);
   }
 );
+
 
 
